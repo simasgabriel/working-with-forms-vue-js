@@ -16,16 +16,20 @@ const handlingForms = {
     data() {
         return {
             members: window.members,
-            newMember: {
-               
+            newMember:{
+                
             }
         }
     },
-    methods:{
-        addMember:function(){
+    methods: {
+        addMember:function() {
             this.members.push(this.newMember);
+            this.newMember = {
+                            
+                        }
     }
 
-}};
+}
+}
 
 Vue.createApp(handlingForms).mount('#app');
